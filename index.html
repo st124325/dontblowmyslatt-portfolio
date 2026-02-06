@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="dontblowmyslatt - Профессиональные биты для артистов.">
-    <title>dontblowmyslatt | Битмейкер & Продюсер</title>
+    <meta name="description" content="glamour - Профессиональные биты для артистов.">
+    <title>glamour | Битмейкер & Продюсер</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,7 @@
     <header class="header" id="header">
         <div class="container">
             <a href="#" class="logo">
-                <img src="images/logo.jpg" alt="dontblowmyslatt" class="logo-img" onerror="this.onerror=null; this.src='images/logo.png';">
+                <img src="images/logo.jpg" alt="glamour" class="logo-img" onerror="this.onerror=null; this.src='images/logo.png';">
                 <span class="logo-text">dontblowmy<span class="accent">slatt</span></span>
             </a>
             
@@ -236,8 +236,8 @@
         </div>
     </section>
 
-    <!-- ========== ABOUT SECTION / ОБО МНЕ ========== -->
-    <section class="about-section" id="about">
+    <!-- ========== ABOUT SECTION / ОБО МНЕ с эффектом скролл-зума ========== -->
+    <section class="about-section-scroll" id="about">
         <!-- Анимированные плавающие фигуры -->
         <div class="floating-shapes">
             <div class="elegant-shape shape-1"></div>
@@ -246,17 +246,25 @@
             <div class="elegant-shape shape-4"></div>
             <div class="elegant-shape shape-5"></div>
         </div>
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="images/avatar.jpg" alt="KLAWD BEATS - Битмейкер">
-                    <div class="about-image-decoration"></div>
+        
+        <!-- Контейнер с эффектом скролл-зума -->
+        <div class="scroll-zoom-container" id="scrollZoomContainer">
+            <div class="scroll-zoom-sticky">
+                <div class="scroll-zoom-content" id="scrollZoomContent">
+                    <img src="images/avatar.jpg" alt="glamour - Битмейкер" class="scroll-zoom-image">
+                    <div class="scroll-zoom-overlay">
+                        <span class="scroll-zoom-label">Обо мне</span>
+                        <h2 class="scroll-zoom-title">Привет, я <span class="accent">glamour</span></h2>
+                        <p class="scroll-zoom-subtitle">Битмейкер & Продюсер</p>
+                    </div>
                 </div>
-                
-                <div class="about-content">
-                    <span class="section-label">Обо мне</span>
-                    <h2 class="section-title">Привет, я <span class="accent">dontblowmyslatt</span></h2>
-                    
+            </div>
+        </div>
+        
+        <!-- Контент после зума -->
+        <div class="about-content-section">
+            <div class="container">
+                <div class="about-content-centered">
                     <p class="about-text">
                         Битмейкер и музыкальный продюсер из Москвы. Уже более 5 лет создаю биты 
                         для артистов по всей России и СНГ. Моя цель — помочь тебе найти свой 
@@ -286,7 +294,7 @@
                     </div>
                     
                     <div class="about-social">
-                        <a href="https://t.me/dontblowmyslatt" target="_blank" class="social-link" aria-label="Telegram">
+                        <a href="https://t.me/glamour" target="_blank" class="social-link" aria-label="Telegram">
                             <i class="fab fa-telegram"></i>
                         </a>
                     </div>
@@ -315,7 +323,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>Telegram</h4>
-                            <a href="https://t.me/dontblowmyslatt" target="_blank">@dontblowmyslatt</a>
+                            <a href="https://t.me/glamour" target="_blank">@glamour</a>
                         </div>
                     </div>
                 </div>
@@ -341,12 +349,12 @@
                 </div>
                 
                 <div class="footer-social">
-                    <a href="https://t.me/dontblowmyslatt" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://t.me/glamour" target="_blank"><i class="fab fa-telegram"></i></a>
                 </div>
             </div>
             
         <div class="footer-bottom">
-            <p>&copy; 2026 dontblowmyslatt. Все права защищены.</p>
+            <p>&copy; 2026 glamour. Все права защищены.</p>
             <p class="footer-dev">
                 <a href="https://t.me/dolepp_dev" target="_blank">
                     <i class="fas fa-code"></i> Разработка сайтов и Telegram-ботов — @dolepp_dev

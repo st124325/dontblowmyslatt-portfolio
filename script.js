@@ -241,7 +241,7 @@ function createBeatCard(beat, index) {
     // Добавляем обработчик клика на кнопку покупки (переход в Telegram)
     const buyBtn = card.querySelector('.buy-btn');
     buyBtn.addEventListener('click', () => {
-        window.open('https://t.me/dontblowmyslatt', '_blank');
+        window.open('https://t.me/glamour', '_blank');
     });
     
     return card;
@@ -856,9 +856,46 @@ function initDotBackground() {
     canvas.style.pointerEvents = 'none';
 }
 
+// ==========================================
+// ЭФФЕКТ СКРОЛЛ-ЗУМА ДЛЯ СЕКЦИИ "ОБО МНЕ"
+// ==========================================
+
+/**
+ * Инициализирует эффект масштабирования при скролле
+ */
+function initScrollZoom() {
+    const container = document.getElementById('scrollZoomContainer');
+    const content = document.getElementById('scrollZoomContent');
+    
+    if (!container || !content) return;
+    
+    const startScale = 0.3;
+    const endScale = 1;
+    
+    function handleScroll() {
+        const rect = container.getBoundingClientRect();
+        const containerHeight = container.offsetHeight;
+        const windowHeight = window.innerHeight;
+        
+        // Вычисляем прогресс скролла
+        const scrolled = Math.max(0, -rect.top);
+        const maxScroll = containerHeight - windowHeight;
+        const progress = Math.min(scrolled / maxScroll, 1);
+        
+        // Масштаб от startScale до endScale
+        const scale = startScale + (progress * (endScale - startScale));
+        
+        content.style.transform = `scale(${scale})`;
+    }
+    
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Начальное вычисление
+}
+
 // Запускаем после загрузки
 document.addEventListener('DOMContentLoaded', () => {
     initDotBackground();
+    initScrollZoom();
 });
 
 // ==========================================
