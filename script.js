@@ -241,7 +241,7 @@ function createBeatCard(beat, index) {
     // Добавляем обработчик клика на кнопку покупки (переход в Telegram)
     const buyBtn = card.querySelector('.buy-btn');
     buyBtn.addEventListener('click', () => {
-        window.open('https://t.me/glamour', '_blank');
+        window.open('https://t.me/dontblowmyslatt', '_blank');
     });
     
     return card;
