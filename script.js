@@ -25,7 +25,7 @@ const beatsData = [
         key: null,
         audioUrl: "audio/1.mp3",
         demoUrl: "audio/1.mp3",
-        coverUrl: "images/1.jpg"
+        coverUrl: "images/1.png"
     },
     {
         id: 2,
@@ -35,7 +35,7 @@ const beatsData = [
         key: null,
         audioUrl: "audio/2royale.mp3",
         demoUrl: "audio/2royale.mp3",
-        coverUrl: "images/2royale.jpg"
+        coverUrl: "images/2royale.png"
     },
     {
         id: 3,
@@ -45,27 +45,37 @@ const beatsData = [
         key: null,
         audioUrl: "audio/mapele 145 bpm kyd.mp3",
         demoUrl: "audio/mapele 145 bpm kyd.mp3",
-        coverUrl: "images/mapele 145 bpm kyd.jpg"
+        coverUrl: "images/mapele 145 bpm kyd.png"
     },
     {
         id: 4,
+        title: "Project_32",
+        genre: "beat",
+        bpm: null,
+        key: null,
+        audioUrl: "audio/Project_32.mp3",
+        demoUrl: "audio/Project_32.mp3",
+        coverUrl: "images/Project_32.png"
+    },
+    {
+        id: 5,
         title: "salam",
         genre: "beat",
         bpm: null,
         key: null,
         audioUrl: "audio/salam.mp3",
         demoUrl: "audio/salam.mp3",
-        coverUrl: "images/salam.jpg"
+        coverUrl: "images/salam.png"
     },
     {
-        id: 5,
+        id: 6,
         title: "simple sample",
         genre: "beat",
         bpm: null,
         key: null,
         audioUrl: "audio/simple sample.mp3",
         demoUrl: "audio/simple sample.mp3",
-        coverUrl: "images/simple sample.jpg"
+        coverUrl: "images/simple sample.png"
     }
 ];
 
